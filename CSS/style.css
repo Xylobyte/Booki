@@ -1,0 +1,14 @@
+/* Import google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* Define base color style */
+:root {
+    --blue: #0065FC;
+    --blue-light: #DEEBFF;
+    --gray: #F2F2F2;
+}
+
+/* Style of Booki */
+body {
+    margin: 0;
+}
