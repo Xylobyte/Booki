@@ -3,7 +3,11 @@
 <head>
     <!--    HTML Page info  -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Booki</title>
+    <meta name="description" content="Booki - trouver votre logement rapidement et facilement">
 
     <!--    Import external files  -->
     <link href="css/style.css" rel="stylesheet">
@@ -34,33 +38,35 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
 
-        <form action="" method="get">
+        <form action="#" method="post" name="form-search">
             <label for="location"><i class="fa-solid fa-location-dot"></i></label>
-            <input id="location" name="location" value="Indiquez votre localisation" placeholder="ex: Marseille, France" type="search">
+            <input id="location" name="location" placeholder="Indiquez votre localisation" type="search" value="Marseille, France">
             <input name="search" type="submit" value="Rechercher">
         </form>
     </section>
 
     <section>
-        <h1>Filtres</h1>
+        <div>
+            <span>Filtres</span>
 
-        <button><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
-        <button><i class="fa-solid fa-person"></i> Familial</button>
-        <button><i class="fa-solid fa-heart"></i> Romantique</button>
-        <button><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+            <button><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
+            <button><i class="fa-solid fa-person"></i> Familial</button>
+            <button><i class="fa-solid fa-heart"></i> Romantique</button>
+            <button><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+        </div>
+
+        <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
 
     <section id="hosting">
-        <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+        <section>
+            <h2>Hébergements à Marseille</h2>
 
-        <div>
-            <section>
-                <h1>Hébergements à Marseille</h1>
-
-                <div>
-                    <article>
+            <div>
+                <article>
+                    <a href="#">
                         <img alt="Auberge La Canebière" src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                        <h1>Auberge La Canebière</h1>
+                        <h3>Auberge La Canebière</h3>
                         <p>Nuit à partir de 25<span>€</span></p>
                         <div>
                             <i class="fa-solid fa-star"></i>
@@ -69,24 +75,26 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                    </article>
-                </div>
+                    </a>
+                </article>
+            </div>
 
-                <a href="#">Afficher plus</a>
-            </section>
+            <a href="#">Afficher plus</a>
+        </section>
 
-            <section>
-                <div>
-                    <h1>Les plus populaires</h1>
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
+        <aside>
+            <div>
+                <h2>Les plus populaires</h2>
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
 
-                <div>
-                    <article>
+            <div>
+                <article>
+                    <a href="#">
                         <img alt="Hôtel Le soleil du matin" src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
                         <div>
                             <div>
-                                <h1>Hôtel Le soleil du matin</h1>
+                                <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128<span>€</span></p>
                             </div>
                             <div>
@@ -97,19 +105,21 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </article>
-                </div>
-            </section>
-        </div>
+                    </a>
+                </article>
+            </div>
+        </aside>
     </section>
 
     <section id="activities">
-        <h1>Activités à Marseille</h1>
+        <h2>Activités à Marseille</h2>
 
         <div>
             <article>
-                <img alt="Vieux-Port" src="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
-                <h1>Vieux-Port</h1>
+                <a href="#">
+                    <img alt="Vieux-Port" src="assets/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                    <h3>Vieux-Port</h3>
+                </a>
             </article>
         </div>
     </section>
@@ -117,7 +127,7 @@
 
 <footer>
     <section>
-        <h1>À propos</h1>
+        <h3>À propos</h3>
         <a href="#">Fonctionnement du site</a>
         <a href="#">Conditions générales </a>
         <a href="#">Données et confidentialité</a>
