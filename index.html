@@ -19,6 +19,7 @@
     <meta content="#0065FC" name="theme-color"/>
 
     <!--    Import external files  -->
+    <link href="css/base-style.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/c9ec31a1bb.js"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -47,18 +48,19 @@
     </header>
 
     <main>
-        <section>
+        <section id="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
 
-            <form action="#" method="post" name="form-search">
-                <label for="location"><i class="fa-solid fa-location-dot"></i></label>
-                <input id="location" name="location" placeholder="Indiquez votre localisation" type="search" value="Marseille, France">
-                <input name="search" type="submit" value="Rechercher">
+            <form action="#" class="flex align-center" method="post" name="form-search">
+                <label class="flex align-center input" for="location"><i class="fa-solid fa-location-dot"></i></label>
+                <input class="input input-search" id="location" name="location" placeholder="Indiquez votre localisation" type="search"
+                       value="Marseille, France">
+                <input class="input input-submit" name="search" type="submit" value="Rechercher">
             </form>
         </section>
 
-        <section>
+        <section id="filters">
             <div>
                 <span>Filtres</span>
 

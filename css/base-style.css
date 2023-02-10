@@ -1,0 +1,62 @@
+/***********************************************/
+/*********** Define base color style ***********/
+/***********************************************/
+
+:root {
+    --blue: #0065FC;
+    --blue-light: #DEEBFF;
+    --gray: #F2F2F2;
+}
+
+/*******************************************/
+/*********** Base style of Booki ***********/
+/*******************************************/
+
+* {
+    flex-wrap: wrap;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.6em;
+    margin: 8px 0;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+    font-weight: 400;
+}
+
+button, input[type=submit] {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.justify-center {
+    justify-content: center;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+    align-content: center;
+}
