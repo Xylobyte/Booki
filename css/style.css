@@ -1,11 +1,79 @@
-/* Define base color style */
+/***********************************************/
+/*********** Define base color style ***********/
+/***********************************************/
+
 :root {
     --blue: #0065FC;
     --blue-light: #DEEBFF;
     --gray: #F2F2F2;
 }
 
-/* Style of Booki */
+/**************************************/
+/*********** Style of Booki ***********/
+/**************************************/
+
+/* Base style */
+* {
+    flex-wrap: wrap;
+    font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.justify-center {
+    justify-content: center;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+    align-content: center;
+}
+
+/* Root style */
 body {
-    margin: 0;
+    margin: 0 40px;
+}
+
+.ct-main {
+    width: min(100%, 1300px);
+}
+
+/* Style of header */
+.booki-logo img {
+    height: 25px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0 0 15px 0;
+}
+
+nav a {
+    padding: 25px 25px 10px 25px;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    font-size: 0.9em;
+    border-top-color: transparent;
+    border-top-width: 2px;
+    border-top-style: solid;
+    transition-property: color, border-top-color;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    color: var(--blue);
+    border-top-color: var(--blue);
+    font-weight: 500;
 }
