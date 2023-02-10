@@ -43,18 +43,15 @@ nav a:hover {
 
 /* Search section */
 #search {
-    margin: 40px 0 20px;
+    margin: 40px 0 20px 0;
 }
 
 #search p {
     margin: 0 0 20px 0;
-    font-size: 0.9em;
 }
 
 .input {
     height: 3rem;
-    font-size: 1em;
-    font-weight: 700;
 }
 
 #search form label {
@@ -65,9 +62,8 @@ nav a:hover {
 
 .input-search {
     padding: 0 10px;
-    width: max(25%, 250px);
-    border-color: var(--gray);
-    border-style: solid;
+    width: max(25%, 200px);
+    border-style: solid hidden solid hidden;
 }
 
 .input-submit {
@@ -76,4 +72,49 @@ nav a:hover {
     border-style: hidden;
     background: var(--blue);
     color: white;
+}
+
+.input-submit.mobile {
+    display: none;
+}
+
+.input-submit.mobile i {
+    color: white;
+}
+
+/* Filters section */
+#filters {
+    margin: 20px 0;
+}
+
+#filters span {
+    margin-right: 20px;
+}
+
+.btn-filter {
+    background: transparent;
+    border-radius: 100px;
+    padding: 8px 15px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-filter:hover {
+    background: var(--light-blue);
+}
+
+.btn-filter i {
+    color: var(--blue);
+    margin-right: 5px;
+}
+
+.p-info i {
+    width: 1em;
+    height: 1em;
+    border-radius: 50px;
+    text-align: center;
+    color: var(--blue);
+    font-size: 0.7em;
+    padding: 5px;
+    margin-right: 10px;
 }

@@ -53,24 +53,33 @@
             <p>En plein centre-ville ou en pleine nature</p>
 
             <form action="#" class="flex align-center" method="post" name="form-search">
-                <label class="flex align-center input" for="location"><i class="fa-solid fa-location-dot"></i></label>
-                <input class="input input-search" id="location" name="location" placeholder="Indiquez votre localisation" type="search"
+                <label class="flex align-center input font-1em-bold" for="location"><i class="fa-solid fa-location-dot"></i></label>
+                <input class="input input-search font-1em-bold border" id="location" name="location"
+                       placeholder="Indiquez votre localisation"
+                       type="search"
                        value="Marseille, France">
-                <input class="input input-submit" name="search" type="submit" value="Rechercher">
+                <button class="input input-submit font-1em-bold desktop" name="search" type="submit">Rechercher</button>
+                <button class="input input-submit font-1em-bold mobile" name="search" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
         </section>
 
         <section id="filters">
-            <div>
-                <span>Filtres</span>
+            <div class="flex align-center">
+                <span class="font-1em-bold">Filtres</span>
 
-                <button><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
-                <button><i class="fa-solid fa-person"></i> Familial</button>
-                <button><i class="fa-solid fa-heart"></i> Romantique</button>
-                <button><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+                <div class="flex row">
+                    <button class="btn-filter font-1em-bold border"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
+                    <button class="btn-filter font-1em-bold border"><i class="fa-solid fa-person"></i> Familial</button>
+                    <button class="btn-filter font-1em-bold border"><i class="fa-solid fa-heart"></i> Romantique</button>
+                    <button class="btn-filter font-1em-bold border"><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+                </div>
             </div>
 
-            <p><i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            <p class="p-info flex align-center">
+                <i class="fa-solid fa-info border" title="Information"></i> Plus de 500 logements sont disponibles dans cette ville
+            </p>
         </section>
 
         <section id="hosting">

@@ -4,7 +4,7 @@
 
 :root {
     --blue: #0065FC;
-    --blue-light: #DEEBFF;
+    --light-blue: #DEEBFF;
     --gray: #F2F2F2;
 }
 
@@ -34,9 +34,10 @@ h3 {
 
 p {
     font-weight: 400;
+    font-size: 0.9em;
 }
 
-button, input[type=submit] {
+button {
     cursor: pointer;
 }
 
@@ -59,4 +60,15 @@ button, input[type=submit] {
 .flex.align-center {
     align-items: center;
     align-content: center;
+}
+
+.font-1em-bold {
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.border {
+    border-style: solid;
+    border-color: var(--gray);
+    border-width: 2px;
 }
