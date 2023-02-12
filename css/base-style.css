@@ -20,19 +20,29 @@
 
 h1 {
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin: 8px 0;
 }
 
 h2 {
-
+    font-size: 1.4em;
+    margin: 5px 0 10px 0;
+    font-weight: 700;
 }
 
 h3 {
-
+    margin: 5px 0;
+    font-weight: 700;
+    font-size: 1em;
 }
 
 p {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
     font-weight: 400;
     font-size: 0.9em;
 }
@@ -53,6 +63,10 @@ button {
     flex-direction: row;
 }
 
+.flex.column {
+    flex-direction: column;
+}
+
 .flex.space-between {
     justify-content: space-between;
 }
@@ -71,4 +85,54 @@ button {
     border-style: solid;
     border-color: var(--gray);
     border-width: 2px;
+}
+
+.bg-section {
+    background: var(--gray);
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.22);
+    margin: min(1vw, 14px);
+    width: 15vw;
+    max-width: 210px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 15vw;
+    max-width: 210px;
+    height: 100px;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+.card .card-infos {
+    margin: 0 15px;
+}
+
+.card p, .card .stars {
+    margin: 6px 0;
+    font-size: 0.75em;
+}
+
+.card p span {
+    font-weight: 600;
+}
+
+.card .stars :nth-child(-n+4) {
+    color: var(--blue);
+}
+
+.card .stars :last-child {
+    color: var(--gray);
 }

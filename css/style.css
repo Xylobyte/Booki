@@ -8,7 +8,8 @@ body {
 }
 
 .ct-main {
-    width: min(100%, 1300px);
+    width: 100%;
+    max-width: 1300px;
 }
 
 /* Style of header */
@@ -23,11 +24,7 @@ nav ul {
 
 nav a {
     padding: 25px 25px 10px 25px;
-    text-decoration: none;
     display: inline-block;
-    color: black;
-    font-weight: 400;
-    font-size: 0.9em;
     border-top-color: transparent;
     border-top-width: 2px;
     border-top-style: solid;
@@ -62,7 +59,8 @@ nav a:hover {
 
 .input-search {
     padding: 0 10px;
-    width: max(25%, 200px);
+    width: 25%;
+    min-width: 200px;
     border-style: solid hidden solid hidden;
 }
 
@@ -117,4 +115,19 @@ nav a:hover {
     font-size: 0.7em;
     padding: 5px;
     margin-right: 10px;
+}
+
+/* Hosting section */
+.show-more {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#hosting {
+    width: 57%;
+    max-width: 748px;
+}
+
+#hosting h2 {
+    margin-left: 10px;
 }
