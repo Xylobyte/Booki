@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="flex justify-center">
+<body>
 
 <div class="ct-main">
     <header class="flex row space-between">
@@ -49,27 +49,27 @@
             <p>En plein centre-ville ou en pleine nature</p>
 
             <form action="#" class="flex align-center" method="post" name="form-search">
-                <label class="flex align-center input font-1em-bold" for="location"><i class="fa-solid fa-location-dot"></i></label>
-                <input class="input input-search font-1em-bold border" id="location" name="location"
+                <label class="flex align-center input font-18px-bold" for="location"><i class="fa-solid fa-location-dot"></i></label>
+                <input class="input input-search font-18px-bold border" id="location" name="location"
                        placeholder="Indiquez votre localisation"
                        type="search"
                        value="Marseille, France">
-                <button class="input input-submit font-1em-bold desktop" name="search" type="submit">Rechercher</button>
-                <button class="input input-submit font-1em-bold mobile" name="search" type="submit">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="input input-submit font-18px-bold" name="search" type="submit">
+                    <span class="desktop-show">Rechercher</span>
+                    <i class="fa-solid fa-magnifying-glass mobile-show"></i>
                 </button>
             </form>
         </section>
 
         <section id="filters">
             <div class="flex align-center">
-                <span class="font-1em-bold">Filtres</span>
+                <span class="font-18px-bold">Filtres</span>
 
                 <div class="flex row">
-                    <button class="btn-filter font-1em-bold border"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
-                    <button class="btn-filter font-1em-bold border"><i class="fa-solid fa-person"></i> Familial</button>
-                    <button class="btn-filter font-1em-bold border"><i class="fa-solid fa-heart"></i> Romantique</button>
-                    <button class="btn-filter font-1em-bold border"><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
+                    <button class="btn-filter font-18px-bold border"><i class="fa-solid fa-money-bill-wave"></i> Économique</button>
+                    <button class="btn-filter font-18px-bold border"><i class="fa-solid fa-person"></i> Familial</button>
+                    <button class="btn-filter font-18px-bold border"><i class="fa-solid fa-heart"></i> Romantique</button>
+                    <button class="btn-filter font-18px-bold border"><i class="fa-solid fa-dog"></i> Animaux autorisés</button>
                 </div>
             </div>
 
@@ -82,9 +82,9 @@
             <section class="bg-section flex column" id="hosting">
                 <h2>Hébergements à Marseille</h2>
 
-                <div class="flex">
-                    <a href="#">
-                        <article class="flex column card">
+                <div class="flex space-between">
+                    <a class="card" href="#">
+                        <article class="flex column">
                             <img alt="Auberge La Canebière" src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                             <div class="card-infos">
                                 <h3>Auberge La Canebière</h3>
@@ -99,8 +99,8 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="flex column card">
+                    <a class="card" href="#">
+                        <article class="flex column">
                             <img alt="Auberge La Canebière" src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                             <div class="card-infos">
                                 <h3>Auberge La Canebière</h3>
@@ -115,8 +115,8 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="flex column card">
+                    <a class="card" href="#">
+                        <article class="flex column">
                             <img alt="Auberge La Canebière" src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                             <div class="card-infos">
                                 <h3>Auberge La Canebière</h3>
@@ -131,8 +131,8 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="flex column card">
+                    <a class="card" href="#">
+                        <article class="flex column">
                             <img alt="Auberge La Canebière" src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                             <div class="card-infos">
                                 <h3>Auberge La Canebière</h3>
@@ -147,8 +147,8 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="flex column card">
+                    <a class="card" href="#">
+                        <article class="flex column">
                             <img alt="Auberge La Canebière" src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                             <div class="card-infos">
                                 <h3>Auberge La Canebière</h3>
@@ -163,8 +163,8 @@
                             </div>
                         </article>
                     </a>
-                    <a href="#">
-                        <article class="flex column card">
+                    <a class="card" href="#">
+                        <article class="flex column">
                             <img alt="Auberge La Canebière" src="assets/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                             <div class="card-infos">
                                 <h3>Auberge La Canebière</h3>
@@ -181,26 +181,61 @@
                     </a>
                 </div>
 
-                <a class="font-1em-bold show-more" href="#">Afficher plus</a>
+                <a class="font-18px-bold show-more" href="#">Afficher plus</a>
             </section>
 
             <aside class="bg-section" id="hosting-fav">
-                <div>
+                <div class="flex space-between align-center head">
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
 
-                <div>
-                    <a href="#">
-                        <article>
-                            <img alt="Hôtel Le soleil du matin" src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                                 width="200px">
-                            <div>
+                <div class="flex column">
+                    <a class="card" href="#">
+                        <article class="flex row">
+                            <img alt="Hôtel Le soleil du matin" src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <div class="card-infos flex column space-between">
                                 <div>
                                     <h3>Hôtel Le soleil du matin</h3>
                                     <p>Nuit à partir de 128<span>€</span></p>
                                 </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a class="card" href="#">
+                        <article class="flex row">
+                            <img alt="Hôtel Le soleil du matin" src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <div class="card-infos flex column space-between">
                                 <div>
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de 128<span>€</span></p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a class="card" href="#">
+                        <article class="flex row">
+                            <img alt="Hôtel Le soleil du matin" src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <div class="card-infos flex column space-between">
+                                <div>
+                                    <h3>Hôtel Le soleil du matin</h3>
+                                    <p>Nuit à partir de 128<span>€</span></p>
+                                </div>
+                                <div class="stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>

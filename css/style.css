@@ -4,12 +4,13 @@
 
 /* Root style */
 body {
-    margin: 0 40px;
+    margin: 0;
 }
 
 .ct-main {
-    width: 100%;
-    max-width: 1300px;
+    max-width: 1400px;
+    padding: 0 40px;
+    margin: 0 auto;
 }
 
 /* Style of header */
@@ -69,14 +70,14 @@ nav a:hover {
     padding: 0 20px;
     border-style: hidden;
     background: var(--blue);
+}
+
+.desktop-show {
     color: white;
 }
 
-.input-submit.mobile {
+i.mobile-show {
     display: none;
-}
-
-.input-submit.mobile i {
     color: white;
 }
 
@@ -94,6 +95,7 @@ nav a:hover {
     border-radius: 100px;
     padding: 8px 15px;
     margin: 10px;
+    font-size: 17px;
     transition: background-color 0.3s;
 }
 
@@ -104,6 +106,10 @@ nav a:hover {
 .btn-filter i {
     color: var(--blue);
     margin-right: 5px;
+}
+
+.p-info {
+    flex-wrap: nowrap;
 }
 
 .p-info i {
@@ -124,10 +130,46 @@ nav a:hover {
 }
 
 #hosting {
-    width: 57%;
-    max-width: 748px;
+    width: 58%;
+    margin-right: 20px;
 }
 
 #hosting h2 {
     margin-left: 10px;
+}
+
+/* Hosting favorites section */
+#hosting-fav {
+    width: 25%;
+}
+
+#hosting-fav .head {
+    margin-bottom: 10px;
+}
+
+#hosting-fav h2 {
+    margin-bottom: 5px;
+}
+
+#hosting-fav .head i {
+    color: var(--blue);
+}
+
+#hosting-fav .card {
+    width: 100%;
+}
+
+#hosting-fav .card article {
+    flex-wrap: nowrap;
+}
+
+#hosting-fav .card img {
+    height: 140px;
+    width: 38%;
+    border-radius: 20px 0 0 20px;
+    border-width: 5px 0 5px 5px;
+}
+
+#hosting-fav .card .card-infos {
+    margin: 10px 15px;
 }
