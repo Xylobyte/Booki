@@ -130,8 +130,8 @@ i.mobile-show {
 }
 
 #hosting {
-    width: 58%;
-    margin-right: 20px;
+    width: 57%;
+    margin-right: 10px;
 }
 
 #hosting h2 {
@@ -140,7 +140,7 @@ i.mobile-show {
 
 /* Hosting favorites section */
 #hosting-fav {
-    width: 26%;
+    width: 28%;
 }
 
 #hosting-fav .head {
@@ -221,4 +221,45 @@ footer ul {
 
 footer li {
     margin: 10px 0;
+}
+
+/* Media query tablette */
+@media all and (max-width: 992px) {
+    h3 {
+        font-size: 14px;
+    }
+
+    .card p, .card .stars {
+        font-size: 13px;
+    }
+
+    .flex.mobile-column {
+        flex-direction: column;
+    }
+
+    .flex.tablette-row-justify {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #hosting {
+        width: auto;
+        margin: 0 0 30px 0;
+    }
+
+    #hosting-fav {
+        width: auto;
+    }
+
+    #hosting-fav .card {
+        width: 32%;
+    }
+
+    #hosting-fav .card article {
+        height: 160px;
+    }
+
+    #activities .card img {
+        height: 200px;
+    }
 }
