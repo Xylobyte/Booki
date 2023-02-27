@@ -134,16 +134,12 @@ i.mobile-show {
     margin-right: 10px;
 }
 
-#hosting article {
-    min-height: 213px;
-}
-
 #hosting h3 {
     height: 38px;
 }
 
 #hosting h2 {
-    margin-left: 10px;
+    margin-left: 0;
 }
 
 /* Hosting favorites section */
@@ -194,10 +190,6 @@ i.mobile-show {
 
 #activities .card {
     width: 22%;
-}
-
-#activities article {
-    min-height: 468px;
 }
 
 #activities .card img {
@@ -271,10 +263,6 @@ footer li {
         margin: 0 0 30px 0;
     }
 
-    #hosting article {
-        min-height: fit-content;
-    }
-
     #hosting h3 {
         height: auto;
     }
@@ -289,10 +277,6 @@ footer li {
 
     #hosting-fav .card article {
         height: 160px;
-    }
-
-    #activities article {
-        min-height: 262px;
     }
 
     #activities article h3 {
@@ -346,12 +330,90 @@ footer li {
         border-bottom-color: var(--blue);
     }
 
-    #search, #filters {
+    #filters div.flex.row {
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .btn-filter {
+        width: 46%;
+        min-height: 52px;
+    }
+
+    .p-info.flex {
+        align-items: start;
+    }
+
+    #search, #filters, #activities {
         padding: 0 20px;
     }
 
     #location {
         width: calc(100% - 190px);
         min-width: auto;
+    }
+
+    .mobile-column.flex {
+        flex-direction: column-reverse;
+    }
+
+    #hosting-fav {
+        border-radius: 0;
+        padding: 20px;
+    }
+
+    .tablette-row-justify.flex {
+        flex-direction: column;
+    }
+
+    #hosting-fav .card {
+        width: 100%;
+    }
+
+    #hosting-fav .card article {
+        height: 130px;
+    }
+
+    #hosting {
+        background: transparent;
+        padding: 20px;
+    }
+
+    #hosting .card {
+        width: 100%;
+    }
+
+    #hosting .card img {
+        height: 110px;
+    }
+
+    #hosting .show-more {
+        display: none;
+    }
+
+    #activities div.flex.row {
+        flex-direction: column;
+    }
+
+    #activities .card {
+        width: 100%;
+    }
+
+    #activities .card img {
+        height: 150px;
+    }
+
+    #activities .card h3 {
+        height: auto;
+    }
+
+    footer.flex.row {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    footer section {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
