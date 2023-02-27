@@ -29,7 +29,7 @@ nav a {
     border-top-color: transparent;
     border-top-width: 2px;
     border-top-style: solid;
-    transition-property: color, border-top-color;
+    transition-property: color, border-top-color, border-bottom-color;
     transition-duration: 0.3s;
 }
 
@@ -134,6 +134,14 @@ i.mobile-show {
     margin-right: 10px;
 }
 
+#hosting article {
+    min-height: 213px;
+}
+
+#hosting h3 {
+    height: 38px;
+}
+
 #hosting h2 {
     margin-left: 10px;
 }
@@ -188,6 +196,10 @@ i.mobile-show {
     width: 22%;
 }
 
+#activities article {
+    min-height: 468px;
+}
+
 #activities .card img {
     height: 400px;
     border-style: none;
@@ -195,6 +207,7 @@ i.mobile-show {
 
 #activities .card h3 {
     margin: 15px 20px;
+    height: 38px;
 }
 
 /* Footer section */
@@ -224,7 +237,18 @@ footer li {
 }
 
 /* Media query tablette */
-@media all and (max-width: 992px) {
+@media all and (max-width: 991px) {
+    #filters span {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .btn-filter {
+        margin: 4px;
+        padding: 6px 13px;
+        font-size: 15px;
+    }
+
     h3 {
         font-size: 14px;
     }
@@ -247,6 +271,14 @@ footer li {
         margin: 0 0 30px 0;
     }
 
+    #hosting article {
+        min-height: fit-content;
+    }
+
+    #hosting h3 {
+        height: auto;
+    }
+
     #hosting-fav {
         width: auto;
     }
@@ -259,7 +291,67 @@ footer li {
         height: 160px;
     }
 
+    #activities article {
+        min-height: 262px;
+    }
+
+    #activities article h3 {
+        height: 32px;
+    }
+
     #activities .card img {
         height: 200px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .ct-main {
+        padding: 0;
+    }
+
+    header.flex.row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .booki-logo {
+        margin: 20px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav li {
+        width: 50%;
+    }
+
+    header ul a {
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        border-top: none;
+        border-bottom-color: var(--gray);
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+    }
+
+    nav a:hover {
+        border-top-color: transparent;
+        border-bottom-color: var(--blue);
+    }
+
+    #search, #filters {
+        padding: 0 20px;
+    }
+
+    #location {
+        width: calc(100% - 190px);
+        min-width: auto;
     }
 }
