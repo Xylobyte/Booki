@@ -93,6 +93,8 @@ button {
     padding: 30px;
 }
 
+.desktop-show
+
 .card {
     width: 31%;
 }
@@ -493,8 +495,16 @@ footer li {
     }
 
     #location {
-        width: calc(100% - 190px);
+        width: calc(100% - 108px);
         min-width: auto;
+    }
+
+    .desktop-show {
+        display: none;
+    }
+
+    i.mobile-show {
+        display: block;
     }
 
     .mobile-column.flex {
